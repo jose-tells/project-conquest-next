@@ -26,14 +26,14 @@ export default function ContactForm({ handleClose, isClose, successfulQuery }) {
   return (
     <div className={styles.contactForm}>
       <form
-        action={`https://formsubmit.co/${process.env.RANDOM_STRING_EMAIL}`}
+        action={`https://formsubmit.co/${process.env.NEXT_PUBLIC_RANDOM_STRING_EMAIL}`}
         method="POST"
         onSubmit={handleSubmit}
       >
         <input
           type="hidden"
           name="_next"
-          value={`${process.env.MY_DOMAIN}contact?successful=${successfulQuery}`}
+          value={`${process.env.NEXT_PUBLIC_MY_DOMAIN}contact?successful=${successfulQuery}`}
         />
         <input
           type="hidden"
