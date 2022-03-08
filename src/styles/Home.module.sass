@@ -1,0 +1,36 @@
+@import "Vars"
+
+.reel__container
+  position: fixed
+  width: 100vw
+  height: 100vh
+  z-index: -20
+  overflow: hidden
+
+.reel
+  height: 100%
+  object-fit: cover
+  transform: translateX(-35%)
+
+.wrap_container
+  height: 91vh
+  display: grid
+  grid-template-columns: repeat(5, 1fr)
+  grid-template-rows: repeat(10, 1fr)
+  overflow: hidden
+
+@media (min-width: $tablet)
+  .reel
+    transform: translateX(-25%)
+    object-fit: cover
+
+@media (min-width: $laptop)
+  .reel
+    transform: translateX(-10%)
+    object-fit: cover
+
+@media (min-width: $desktop)
+  .reel
+    width: 100vw
+    transform: translateX(0)
+    object-fit: cover

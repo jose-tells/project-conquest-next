@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@containers/*": ["containers/*"],
+      "@components/*": ["components/*"],
+      "@styles/*": ["styles/*"],
+      "@skeletons/*": ["LoadingSkeletons/*"],
+      "@modals/*": ["Modal/*"],
+      "@hocs/*": ["Hocs/*"],
+      "@firebase/*": ["firebase/*"],
+      "@utils/*": ["utils/*"],
+      "@hooks/*": ["Hooks/*"],
+      "@atoms/*": ["assets/Atoms/*"],
+    }
+  }
+}

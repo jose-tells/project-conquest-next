@@ -1,0 +1,61 @@
+@import "Vars"
+
+.footer
+  width: 90%
+  height: 10rem
+  margin: auto
+  display: flex
+  gap: 1.5rem
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  color: $color5
+  font-weight: 300
+
+.footer__header
+  width: 100%
+  display: flex
+  gap: 1rem
+  justify-content: center
+  align-items: center
+
+.footer__header--underline
+  width: 20%
+  height: 0.1rem
+  background-color: $color5
+
+.footer__brand
+  width: 90%
+  display: flex
+  gap: 5rem
+  justify-content: center
+  align-items: flex-start
+
+.footer__brand--links
+  font-weight: 300
+  font-size: 1.4rem
+  text-transform: uppercase
+  text-decoration: none
+  color: $color4
+
+.footer.isDark .footer__brand--links>a
+  color: $color8
+
+.footer__social--media
+  display: flex
+  gap: 2rem
+
+.footer__social--media>a
+  width: fit-content
+  height: fit-content
+  border: 1px solid $color8
+  border-radius: 50%
+  font-size: 1.5rem
+  font-weight: 300
+  color: $color2
+  border: none
+  background: none
+  text-decoration: none
+
+.footer.isDark .footer__social--media>a
+  color: $color2

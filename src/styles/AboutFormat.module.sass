@@ -1,0 +1,34 @@
+@import "Vars"
+
+.gridAbout__item--container
+  position: relative
+  width: 33.33333%
+  height: 100vh
+  display: grid
+  grid-template-columns: repeat(5, 1fr)
+  grid-template-rows: repeat(2, 1fr)
+  overflow: hidden
+
+.gridAbout__item--container:nth-child(1) .gridAbout__image
+  transform: translateX(-15%)
+
+.gridAbout__item--container:nth-child(2) .gridAbout__image
+  transform: translateX(-35%)
+
+.gridAbout__image--container
+  position: relative
+  grid-column: 1/6
+  grid-row: 1/3
+  width: 100vw
+  height: 100vh
+
+.gridAbout__image
+  transform: translateX(-55%)
+  object-fit: cover
+  z-index: 0
+
+.gridAbout__link
+  position: absolute
+  width: 100vw
+  height: 100vh
+  text-decoration: none

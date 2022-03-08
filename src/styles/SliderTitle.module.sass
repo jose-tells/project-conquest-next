@@ -1,0 +1,31 @@
+@import "Vars"
+
+.slider
+  width: 100%
+  margin: 2rem
+  grid-column: 1/8
+  grid-row: 2/4
+  align-self: center
+
+.slider__container
+  min-width: 100%
+  display: flex
+  flex-wrap: nowrap
+  transform: translateX(-2rem)
+  overflow: hidden
+
+.slider__animation
+  min-width: 100%
+  margin-left: 0.3rem
+  display: inline
+  font-size: $titlesFontSize + 0.7rem
+  font-family: $fuente-principal
+  font-weight: 900
+  color: $color1
+  text-transform: uppercase
+  transition: 2.5s all
+
+.slider__text
+  font-size: $titlesFontSize + 0.3rem
+  font-family: $fuente-principal
+  color: $color5
